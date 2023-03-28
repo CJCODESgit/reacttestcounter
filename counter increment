@@ -8,11 +8,16 @@ export default function App() {
     const incrementHandler = () => {
         setCounter(counter +1);
     }
+
+    const decrementHandler = () => {
+        setCounter(counter -1);
+    }
     
     return (
       <div>
         <p id="counter">{counter}</p>
         <button onClick={incrementHandler}>Increment</button>
+        <button onClick={decrementHandler}>Decrement</button>
       </div>
     );
 }
